@@ -1,0 +1,33 @@
+---
+title: "OEDA - Lab Manual"
+---
+
+This is an early draft of the OEDA Lab Manual. This manual establishes our standard operating procedures, best practices, and resources for conducting OEDA research. It aims to
+
+* facilitate onboarding
+* streamline workflows
+* reduce analysis paralysis
+* ensure data security and integrity
+* promote high-quality research
+* support the timely and transparent delivery of insights for public benefit
+
+In Beer's [Viable Systems Model](https://en.wikipedia.org/wiki/Viable_system_model),  OEDA staff work alone and in teams as autonomous System 1 units, conducting studies and projects, producing research projects. The OEDA Lab Manual will be an important System 2 support, helping OEDA's research analysts work without undue intervention, with standards, guidelines, expectations, and resources.
+
+## OEDA's Vision (Draft - Proposed July 2025)
+
+Oregon state agencies integrating data to measure performance, test ideas, experiment with options, and improve operations.
+
+## OEDA's Mission (Draft - Proposed July 2025)
+
+OEDA provides timely, objective, and independent research and analytics, enabling Oregon’s human services agencies to make informed, effective, and equitable decisions for the well-being of Oregonians.
+
+## OEDA's Values (Adopted from ORRAI strategic plan, 2024)
+
+* Inclusion, diversity, equity, & access
+* Connection & collaboration
+* Reliability & accuracy
+* Transparency & fairness
+* Responsiveness & timeliness
+* Humility & growth
+eated in 2024.
+

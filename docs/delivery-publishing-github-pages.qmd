@@ -1,0 +1,86 @@
+---
+title: "Publishing to GitHub pages"
+---
+
+## Basic resources
+
+*   [Happy Git and GitHub for the useR](https://happygitwithr.com/rstudio-git-github.html)
+*   [Quarto guidance on publishing to GitHub pages using the `docs` folder](https://quarto.org/docs/publishing/github-pages.html#render-to-docs)
+
+## Create a git repository if one does not already exist
+
+*   Login to: [https://github.com/login](https://github.com/login)
+*   In the left sidebar, click `New` to create a new repository
+*   Set yourself as owner, and give your repository a name, e.g. this website is `OEDA-lab-manual`
+*   Set the visibility of the repository to Public (hosting websites from Private repositories requires an upgraded GitHub account for ORRAI)
+*   Click `Create repository`
+*   Click `<>Code` in the top ribbon
+*   Copy the location from the Quick Setup section. For the OEDA Lab Guide (the website you're reading), this is `https://github.com/wallinjm/OEDA-lab-manual.git`
+
+
+## Create a new R project associated with your new repository
+
+*   Start RStudio
+*   Click `File > New Project`
+*   Click `Version Control`
+*   Click `Git`
+*   In the `Repository URL` field, paste the URL copied from above
+
+## Create your website files
+
+### `_quarto.yml`
+
+This should look something like the following. The key thing for publishing to GitHub pages in this way is the specification of `output-dir: docs` in the `project:` section.
+
+```yaml
+
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "Site title"
+  navbar:
+    left:
+      - text: "Page 1 title"
+        href: page1.qmd
+      - text: "Page 2 title"
+        href: page2.qmd
+```
+
+### Content pages
+
+Create one or more `.qmd` files with your content. These generally start with:
+
+```quarto
+---
+title: "Page 1 title"
+---
+
+Your markdown here.
+  
+```
+
+
+### Create a `.nojekyll` file
+
+Open a Windows Prompt in the  [Terminal in RStudio](https://support.posit.co/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE) to create a `.nojekyll` file in the root of your git repository. This prevents Github from processing the website in undesirable ways.
+
+You'll do this just once before you publish your site for the first time.
+
+```default
+
+copy NUL .nojekyll
+
+```
+### Render your files to `docs`
+
+In a new GitBash terminal
+
+```default
+
+git add docs
+git commit -m "Commit note"
+git push
+
+```
